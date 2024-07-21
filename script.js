@@ -12,7 +12,7 @@ posterText.addEventListener("click", (event) => {
   posterText.style.display= "none";
   let oldValue = posterText.textContent;
 
-  activeInput.style.display= "block";
+  posterInput.style.display= "block";
 });
 
 /**
@@ -23,18 +23,18 @@ posterText.addEventListener("click", (event) => {
  * the content of the poster-text paragraph is changed and
  * displayed at its first place!
  */
-activeInput.addEventListener("mouseout", (event) => {
+posterInput.addEventListener("mouseout", (event) => {
 
   // Keep the old value of the poster if the new post is empty
   if (event.target.value == "")
   {
-    activeInput.style.display = "None";
+    posterInput.style.display = "None";
     posterText.style.display = oldValue;
   }
   else {
     posterText.textContent = event.target.value;
-    activeInput.placeholder = event.target.value;
-    activeInput.style.display = "None";
+    posterInput.placeholder = event.target.value;
+    posterInput.style.display = "None";
     posterText.style.display = "block";
   }
 });

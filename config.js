@@ -1,4 +1,4 @@
-let container = document.querySelector(".container");
-let posterText = document.querySelector(".poster-text");
-let activeInput = document.querySelector(".active_input");
+let poster = document.querySelector(".poster");
+let posterText = document.querySelector(".poster__text");
+let posterInput = document.querySelector(".poster__input");
 let oldValue = "";
